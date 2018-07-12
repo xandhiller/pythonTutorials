@@ -14,11 +14,8 @@
 
 # Going to tweak the function, so recopying it.
 def outer_func(msg):
-    message = msg
-
     def inner_func():
-        print(message)
-
+        print(msg)
     return inner_func
 
 gday_func = outer_func('G\'day!')
